@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <span class="layer none"></span>
+    <div class="order-complete none">
+      <div class="image">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" />
+      </div>
+      <div class="text">
+        <p class="large">Order Confirmed</p>
+        <p class="xsmall">We hope you enjoy your food!</p>
+      </div>
+      <div class="items"></div>
+
+      <div class="new">
+        <p class="medium">Start New Order</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box-desserts">
+        <p class="large">Desserts</p>
+        <div class="grid"></div>
+      </div>
+      <div class="box-cart">
+        <p class="cart-heading">Your Cart (<span id="quantity">0</span>)</p>
+        <div class="empty">
+          <div class="image">
+            <img src="assets/images/illustration-empty-cart.svg" alt="" />
+            <p class="xsmall">Your added items will appear here</p>
+          </div>
+        </div>
+        <div class="items"></div>
+        <div class="total">
+          <p class="xsmall">Order Total</p>
+          <p class="cart-heading" id="total-price"></p>
+        </div>
+        <div class="carbon">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+          <p class="xsmall">
+            This is a <span class="medium">carbon-neutral</span> delivery
+          </p>
+        </div>
+        <div class="confirm">
+          <p class="medium">Confirm Order</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+
+
+  Your Cart ( Quantity  Your added items will appear here -->
+<!-- 
+<div class="box">
+            <div class="image">
+              <img src="assets/images/image-waffle-desktop.jpg" alt="" />
+              <div class="add-to-cart">
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <p class="small">Add to Cart</p>
+              </div>
+            </div>
+            <div class="text">
+              <p class="xsmall">Waffle</p>
+              <p class="medium">Waffle with Berries</p>
+              <p class="small price">$6.5</p>
+            </div>
+          </div>
+<div class="box-cart">
+          <p class="cart-heading">Your Cart (<span id="quantity">0</span>)</p>
+          <div class="image">
+            <img src="assets/images/illustration-empty-cart.svg" alt="" />
+            <p class="xsmall">Your added items will appear here</p>
+          </div>
+        </div>
+
+        
+<div class="item">
+          <div class="image">
+            <img src="assets/images/image-tiramisu-thumbnail.jpg" alt="" />
+            <div class="text">
+              <p class="medium">Classic Tiramisu</p>
+              <div class="inner-text">
+                <p class="small price">1x</p>
+                <p class="xsmall">@ $5.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="price"><p class="small">$5.50</p></div>
+        </div>
+
+
+        <div class="box">
+            <div class="image">
+              <img src="${data.image["desktop"]}" alt="" />
+              <img src="${data.image["thumbnail"]}" style="display:none;" />
+              <img src="${data.image["tablet"]}" style="display:none;" />
+              <img src="${data.image["mobile"]}" style="display:none;" />
+
+              <div class="add-to-cart" id="add">
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <p class="small" >Add to Cart</p>
+              </div>
+              <div class="added none">
+      <img src="assets/images/icon-decrement-quantity.svg" alt="" />
+      <p class="quantity">1</p>
+      <img src="assets/images/icon-increment-quantity.svg" alt="" />
+    </div>
+            </div>
+            <div class="text">
+              <p class="xsmall" >${data.category}</p>
+              <p class="medium" id="name">${data.name}</p>
+              <p class="small price" id="price">$${data.price.toFixed(2)}</p>
+            </div>
+          </div>
+
+-->
